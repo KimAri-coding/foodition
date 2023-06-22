@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Foodition</string>
+    <string name="format_today">"yyyy / MM / dd"</string>
+</resources>

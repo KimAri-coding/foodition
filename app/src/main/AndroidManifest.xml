@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/mainicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Foodition"
+        tools:targetApi="31">
+        <activity
+            android:name=".Foodition_Main_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Foodition_Chart_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Foodition_Edit_img_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Foodition_FoodPage_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Foodition_Add_img_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Foodition_Add_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Foodition_Intro_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
